@@ -18,6 +18,10 @@ public class ApplicationConfig extends Application {
   private void addRestResourceClasses(Set<Class<?>> resources) {
     // and resource class here, Ex. resources.add(Demo.class);
 
+    resources.add(AuthFilter.class);
+    resources.add(AuthenticationResource.class);
+    resources.add(CustomerResource.class);
+    resources.add(CustomersResource.class);
     resources.add(ContactResource.class);
     resources.add(ContactsResource.class);
     resources.add(UsersResource.class);
